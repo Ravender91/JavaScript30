@@ -58,7 +58,40 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
+  let keyboard = document.querySelectorAll('.key');
+  let sounds = document.querySelectorAll('audio');
 
+  document.addEventListener('keydown', sound);
+
+  function sound (e) {
+    if (e.keyCode == 65) {
+      sounds[0].play()
+    }
+    if (e.keyCode == 83) {
+      sounds[1].play()
+    }
+    if (e.keyCode == 68) {
+      sounds[2].play()
+    }
+    if (e.keyCode == 70) {
+      sounds[3].play()
+    }
+    if (e.keyCode == 71) {
+      sounds[4].play()
+    }
+    if (e.keyCode == 72) {
+      sounds[5].play()
+    }
+    if (e.keyCode == 74) {
+      sounds[6].play()
+    }
+    if (e.keyCode == 75) {
+      sounds[7].play()
+    }
+    if (e.keyCode == 76) {
+      sounds[8].play()
+    }
+  }
 </script>
 
 
